@@ -27,6 +27,7 @@
     "metalsmith-sitemap": "git://github.com/eddywashere/metalsmith-sitemap#develop",
     "metalsmith-tags": "^0.9.1",
     "metalsmith-templates": "^0.7.0",
-    "metalsmith-writemetadata": "0.4.4"
+    "metalsmith-writemetadata": "0.4.4",
+    "swig": "^1.4.2"
   }
 }
