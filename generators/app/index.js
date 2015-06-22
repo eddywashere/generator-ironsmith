@@ -44,7 +44,7 @@ module.exports = yeoman.generators.Base.extend({
     mkdirp('js');
     mkdirp('images');
 
-    this.template('.gitignore', '.gitignore');
+    this.template('gitignore', '.gitignore');
     this.template('package.json', 'package.json');
     this.template('config.js', 'config.js');
     this.template('Gulpfile.js', 'Gulpfile.js');
