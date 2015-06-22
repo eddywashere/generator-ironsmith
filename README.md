@@ -2,6 +2,8 @@
 
 > A [Yeoman](http://yeoman.io) generator for working with metalsmith
 
+Check out a [live demo](http://eddywashere.github.io/ironsmith-demo) of what you can build with this generator.
+
 ## Quick start
 
 Install dependencies for this generator
