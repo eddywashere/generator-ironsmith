@@ -1,13 +1,21 @@
 {
   "name": "generator-ironsmith",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": {
     "name": "Eddy Hernandez",
     "email": "edward.d.hernandez@gmail.com",
     "url": "https://github.com/eddywashere"
   },
+  "homepage": "https://github.com/eddywashere/generator-ironsmith",
+  "keywords": ["metalsmith", "ironsmith", "yeoman", "generator", "gulp", "scss", "blog", "static", "static site"],
   "description": "Yeoman generator for Metalsmith",
-  "repository": "eddywashere/generator-ironsmith",
+  "bugs": {
+    "url": "http://github.com/eddywashere/generator-ironsmith/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eddywashere/generator-ironsmith.git"
+  },
   "dependencies": {
     "chalk": "^1.0.0",
     "lodash": "^3.9.3",
