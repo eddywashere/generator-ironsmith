@@ -1,0 +1,17 @@
+<header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="{{ baseUrl }}/" class="site-title">{{site.title}}</a>
+      <nav class="site-nav right">
+        <a href="{{ baseUrl }}/blog">Blog</a>
+      {%- for post in collections.pages %}
+        {%- if post.priority > 1 %}<a href="{{ baseUrl }}/{{post.path}}">{{post.linkTitle}}</a>{% endif -%}
+      {% endfor -%}
+      </nav>
+      <div class="clearfix"></div>
+      {% if site.show_social_icons %}
+        {% include social_links.html %}
+      {% endif %}
+    </div>
+  </div>
+</header>

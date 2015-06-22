@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{site.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{baseUrl}}/images/favicon.ico">
+    <link rel="stylesheet" href="{{baseUrl}}/css/style.css">
+    <link rel="alternate" type="application/rss+xml" title="{{site.title}}" href="{{ baseUrl }}/rss.xml">
+  </head>
+  <body>
+    <div class="site-wrap">
+      {% include 'partials/header.html' %}
+
+      <div class="post p2 p-responsive wrap" role="main">
+        <div class="measure">
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+    </div>
+    {% include 'partials/footer.html' %}
+    <script src="/js/scripts.js"></script>
+    {%if site.googleAnalytics %}{% include 'partials/analytics.html' %}{% endif %}
+    {% block thirdparty %}{% endblock %}
+  </body>
+</html>

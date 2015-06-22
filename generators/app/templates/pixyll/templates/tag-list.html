@@ -1,0 +1,17 @@
+{% extends './default.html' %}
+
+{% block content %}
+<div class="post">
+  <header class="post-header">
+    <h1 class="h2">{{ name }}</h1>
+  </header>
+  <article class="post-content">
+    {{contents | safe}}
+    <ul>
+      {% for x in tags %}
+      <li><a href="{{baseUrl}}/tags/{{loop.key | replace(' ', '-')}}">{{loop.key}}</a></li>
+      {% endfor %}
+    </ul>
+  </article>
+</div>
+{% endblock %}

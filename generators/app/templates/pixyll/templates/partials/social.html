@@ -1,0 +1,38 @@
+<div class="social-icons">
+  <div class="left">
+    {% if social.github_username %}
+      <a class="fa fa-github" href="https://github.com/{{ social.github_username }}"></a>
+    {% endif %}
+    {% if social.stackoverflow_id %}
+      <a class="fa fa-stack-overflow" href="https://stackoverflow.com/users/{{ social.stackoverflow_id }}"></a>
+    {% endif %}
+    <a class="fa fa-rss" href="{{baseUrl}}/feed.xml"></a>
+    {% if social.twitter_username %}
+      <a class="fa fa-twitter" href="https://twitter.com/{{ social.twitter_username }}"></a>
+    {% endif %}
+    {% if social.google_plus_id %}
+      <a class="fa fa-google-plus" href="https://plus.google.com/{{ social.google_plus_id }}/posts"></a>
+    {% endif %}
+    {% if social.email %}
+      <a class="fa fa-envelope" href="mailto:{{ social.email }}"></a>
+    {% endif %}
+    {% if social.linkedin_username %}
+      <a class="fa fa-linkedin" href="https://www.linkedin.com/in/{{ social.linkedin_username }}"></a>
+    {% endif %}
+    {% if social.angellist_username %}
+      <a class="fa fa-angellist" href="https://angel.co/{{ social.angellist_username }}"></a>
+    {% endif %}
+  </div>
+  <div class="right">
+    {% if social.bitcoin_url %}
+      <a class="fa fa-bitcoin" href="{{ social.bitcoin_url }}"></a>
+    {% endif %}
+    {% if social.paypal_url %}
+      <a class="fa fa-paypal" href="{{ social.paypal_url }}"></a>
+    {% endif %}
+    {% if social.flattr_button %}
+      {{ social.flattr_button }}
+    {% endif %}
+  </div>
+</div>
+<div class="clearfix"></div>

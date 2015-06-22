@@ -1,0 +1,36 @@
+{% extends './default.html' %}
+
+{% block content %}
+<h1>Tag: <strong>{{tag}}</strong></h1>
+<div class="posts">
+  <div class="posts">
+    {% for post in pagination.files %}
+      <div class="post">
+        <p class="post-meta">{{ post.date | date('M j, Y') }}</p>
+        <a href="{{baseUrl}}/{{post.path}}" class="post-link"><h3 class="h2 post-title">{{post.title}}</h3></a>
+        <p class="post-summary">{{post.excerpt | safe}}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% if pagination.next || pagination.previous %}
+<div class="pagination clearfix mb1 mt4">
+  <div class="left">
+    {% if pagination.num == 2 %}
+    <a class="pagination-item" href="{{ baseUrl }}/tags/{{tag | replace(' ', '-')}}">Newer</a>
+    {% elseif pagination.previous %}
+    <a class="pagination-item" href="{{ baseUrl }}/tags/{{tag | replace(' ', '-')}}/{{pagination.previous.pagination.num}}">Newer</a>
+    {% else %}
+    <span class="pagination-item disabled">Newer</span>
+    {% endif %}
+  </div>
+  <div class="right">
+    {% if pagination.next %}
+    <a class="pagination-item" href="{{ baseUrl }}/tags/{{tag | replace(' ', '-')}}/{{pagination.next.pagination.num}}">Older</a>
+    {% else %}
+    <span class="pagination-item disabled">Older</span>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+{% endblock %}
