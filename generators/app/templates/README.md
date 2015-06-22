@@ -33,5 +33,5 @@ gulp build
 Deploy to github pages with
 
 ```
-gulp deploy
+gulp build:prod deploy
 ```

@@ -42,7 +42,7 @@ var scripts = function() {
 gulp.task('scripts', ['clean'], scripts);
 gulp.task('scripts-watch', scripts);
 
-gulp.task('deploy', ['build:prod'], function() {
+gulp.task('deploy', function() {
   return gulp.src('./build/**/*')
     .pipe(ghPages());
 });
