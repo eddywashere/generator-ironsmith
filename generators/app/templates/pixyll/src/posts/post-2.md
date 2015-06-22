@@ -3,7 +3,7 @@ title: Blog Post Title
 template: post.html
 date: 2015-03-02
 description: this is just a description
-author: metal-pixyll
+author: <%= author %>
 tags: blah, nodejs, static site, metalsmith
 ---
 

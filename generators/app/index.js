@@ -25,6 +25,7 @@ module.exports = yeoman.generators.Base.extend({
     this.prompt(prompts, function (props) {
       this.name = props.name;
       this.config.set('author', props.author);
+      this.author = props.author;
       this.cameledName = _.camelCase(this.name);
       this.classedName = _.capitalize(_.camelCase(this.name));
       this.titleName =  _.startCase(this.name);

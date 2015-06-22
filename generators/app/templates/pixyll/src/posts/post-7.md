@@ -3,7 +3,7 @@ title: Lorem dolor sit amet
 template: post.html
 date: 2014-05-05
 description: this is just a description
-author: metal-pixyll
+author: <%= author %>
 tags: blah, nodejs, static site, metalsmith
 ---
 
