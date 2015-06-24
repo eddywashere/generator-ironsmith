@@ -24,7 +24,7 @@
     "metalsmith-metallic": "^0.3.1",
     "metalsmith-pagination": "^1.0.0",
     "metalsmith-permalinks": "^0.4.0",
-    "metalsmith-sitemap": "^0.0.10",
+    "metalsmith-sitemap": "^0.1.0",
     "metalsmith-tags": "^0.9.1",
     "metalsmith-templates": "^0.7.0",
     "metalsmith-writemetadata": "0.4.4",
