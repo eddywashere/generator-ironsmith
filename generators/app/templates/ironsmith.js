@@ -102,9 +102,6 @@ module.exports = function (production) {
       hostname: configData.site.url,
       defaults: {
         lastModified: Date.now()
-      },
-      root: {
-        lastModifed: Date.now()
       }
     }))
     .use(htmlMinifier())
